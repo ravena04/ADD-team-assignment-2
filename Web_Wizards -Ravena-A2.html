@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>SriEshwar Conference</title>
+</head>
+
+<body>
+    <h1>Sri Eshwar Conference Registration Form</h1>
+    <form action="Results.html" method="post" enctype="multipart/form-data">
+
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required autofocus><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="country_code">Country Code:</label>
+            <input type="text" id="country_code" name="country_code" value="+91" maxlength="4" required><br><br>
+
+            <label for="phone_number">Phone Number:</label>
+            <input type="tel" id="phone_number" name="phone_number" required><br><br>
+
+            <label for="company_name">Company Name:</label>
+            <input type="text" id="company_name" name="company_name" maxlength="20" required><br><br>
+
+            <label for="job_title">Job Title:</label>
+            <input type="text" id="job_title" name="job_title" required><br><br>
+
+            <label>Gender:</label><br>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender" value="female" required>
+            <label for="female">Female</label><br><br>
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" min="15" max="70" required><br><br>
+
+            <label for="country">Country:</label>
+            <input type="text" id="country" name="country" required><br><br>
+
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city" required><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Dietary Preferences</legend>
+            <label for="dietary_preferences">Dietary Preferences:</label><br>
+            <input type="checkbox" id="veg" name="dietary_preferences" value="Vegetarian">
+            <label for="veg">Vegetarian</label><br>
+            <input type="checkbox" id="non-veg" name="dietary_preferences" value="Non-Vegetarian">
+            <label for="non-veg">Non-Vegetarian</label><br><br>
+
+            <label for="tshirt_size">T-Shirt Size:</label>
+            <select id="tshirt_size" name="tshirt_size">
+                <option value="XS">XS</option>
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+                <option value="XXL">XXL</option>
+            </select><br><br>
+
+            <label for="tshirt_color">Preferred T-shirt Color:</label>
+            <input type="color" id="tshirt_color" name="tshirt_color"><br><br>
+
+            <label>Session Preferences:</label><br>
+            <input type="checkbox" id="session1" name="session_preferences" value="Session 1">
+            <label for="session1">Session 1</label><br>
+            <input type="checkbox" id="session2" name="session_preferences" value="Session 2">
+            <label for="session2">Session 2</label><br>
+            <input type="checkbox" id="session3" name="session_preferences" value="Session 3">
+            <label for="session3">Session 3</label><br><br>
+
+            <label for="workshop_selection">Workshop Selection:</label>
+            <select id="workshop_selection" name="workshop_selection" required>
+                <option value="Workshop 1">Workshop 1</option>
+                <option value="Workshop 2">Workshop 2</option>
+                <option value="Workshop 3">Workshop 3</option>
+            </select><br><br>
+
+            <label for="date_of_attending">Date of Attending the Workshop:</label><br>
+            <input type="radio" id="date1" name="date_of_attending" value="Date 1" required>
+            <label for="date1">Date 1</label><br>
+            <input type="radio" id="date2" name="date_of_attending" value="Date 2" required>
+            <label for="date2">Date 2</label><br>
+            <input type="radio" id="date3" name="date_of_attending" value="Date 3" required>
+            <label for="date3">Date 3</label><br><br>
+
+            <label>Will you bring a guest?</label><br>
+            <input type="radio" id="yes" name="bring_guest" value="Yes" required>
+            <label for="yes">Yes</label><br>
+            <input type="radio" id="no" name="bring_guest" value="No" required>
+            <label for="no">No</label><br><br>
+
+            <label for="guest_name">Guest's Name:</label>
+            <input type="text" id="guest_name" name="guest_name"><br><br>
+
+            <label for="guest_dietary_preferences">Guest's Dietary Preferences:</label><br>
+            <input type="checkbox" id="guest_veg" name="guest_dietary_preferences" value="Vegetarian">
+            <label for="guest_veg">Vegetarian</label><br>
+            <input type="checkbox" id="guest_non-veg" name="guest_dietary_preferences" value="Non-Vegetarian">
+            <label for="guest_non-veg">Non-Vegetarian</label><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Payment Information</legend>
+            <label>Preferred Payment Method:</label><br>
+            <input type="radio" id="credit_card" name="payment_method" value="Credit Card" required>
+            <label for="credit_card">Credit Card</label><br>
+            <input type="radio" id="debit_card" name="payment_method" value="Debit Card" required>
+            <label for="debit_card">Debit Card</label><br><br>
+
+            <label for="card_number">Card Number:</label>
+            <input type="text" id="card_number" name="card_number" pattern="[0-9]{16}" required><br><br>
+
+            <label for="expiration_date">Card Expiration Date:</label>
+            <input type="month" id="expiration_date" name="expiration_date" required><br><br>
+
+            <label for="card_cvv">Card CVV:</label>
+            <input type="text" id="card_cvv" name="card_cvv" pattern="[0-9]{3}" required><br><br>
+
+            <label for="billing_address">Billing Address:</label>
+            <textarea id="billing_address" name="billing_address" required></textarea><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Other Information</legend>
+            <label for="how_hear_about_us">How did you hear about us?</label><br>
+            <input type="checkbox" id="social_media" name="how_hear_about_us" value="Social Media">
+            <label for="social_media">Social Media</label><br>
+            <input type="checkbox" id="friend" name="how_hear_about_us" value="Friend">
+            <label for="friend">Friend</label><br>
+            <input type="checkbox" id="website" name="how_hear_about_us" value="Website">
+            <label for="website">Website</label><br>
+            <input type="checkbox" id="other" name="how_hear_about_us" value="Other">
+            <label for="other">Other</label><br><br>
+
+            <label for="id_card_photo">Upload Photo for ID Card (JPG only):</label>
+            <input type="file" id="id_card_photo" name="id_card_photo" accept=".jpg" required><br><br>
+
+            <label for="profile">Collect Profile (PDF only):</label>
+            <input type="file" id="profile" name="profile" accept=".pdf" required multiple><br><br>
+
+            <label for="additional_comments">Additional Comments:</label>
+            <textarea id="additional_comments" name="additional_comments" required></textarea><br><br>
+        </fieldset>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+
+    
+    <p>Developed by Web_wizards</p>
+</body>
+
+</html>
